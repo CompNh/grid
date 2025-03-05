@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+dist/   # 🚫 main 브랜치에서는 dist 제외
+.vite/
+.storybook/
 
 # Editor directories and files
 .vscode/*
