@@ -57,6 +57,7 @@
   },
   "files": [
     "dist",
+    "styles",
     "dist/styles",
     "index.d.ts",
     "index.js"
