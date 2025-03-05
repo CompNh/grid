@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "cross-env vite build && tsc -b",
@@ -18,7 +18,8 @@
     "nhgrid-component": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "vite-plugin-copy": "^0.1.6"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.5",
@@ -56,6 +57,7 @@
   },
   "files": [
     "dist",
+    "styles",
     "index.d.ts",
     "index.js"
   ]
