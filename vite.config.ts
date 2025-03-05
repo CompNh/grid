@@ -22,6 +22,12 @@ export default defineConfig({
           "react-dom": "ReactDOM",
         },
       },
-    },    
+    },  
+      
   },
+  server: {
+    watch: {
+      disableGlobbing: true
+    }
+  }  
 });
