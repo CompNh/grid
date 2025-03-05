@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "index.js",
+  "module": "dist/index.es.js",
+  "types": "index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "cross-env vite build && tsc -b",
@@ -52,6 +55,8 @@
     ]
   },
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts",
+    "index.js"
   ]
 }

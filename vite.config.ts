@@ -8,7 +8,8 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"), // ✅ 진입점을 index.ts로 지정
       name: "NHGridComponent", // ✅ 라이브러리 이름
-      fileName: (format) => `nhgrid-component.${format}.js`, // ✅ 번들 파일명 설정
+      fileName: (format) =>
+        format === "umd" ? "index.umd.js" : "index.es.js", // ✅ 파일명 변경
     },
     rollupOptions: {
       external: ["react", "react-dom"], // ✅ React를 번들에 포함하지 않음
