@@ -1,7 +1,38 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
-}
+    "compilerOptions": {
+        /*타겟 및 라이브러리*/
+        "target": "ESNext",
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "types": ["vite"],
+
+        /*모듈 및 해석 방식*/
+        "module": "ESNext",
+        "moduleResolution": "bundler",        
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+    
+        /* JSX & React */
+        "jsx": "react-jsx",
+    
+        /* Strict Mode */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+    
+        /* Type Declarations (라이브러리용 설정) */
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "emitDeclarationOnly": true,
+    
+        /* Output */
+        "outDir": "dist",
+        "skipLibCheck": true
+    },
+    "include": ["src", "src/styles", ".storybook"],
+    "exclude": ["node_modules", "dist", "src/stories"]
+  }
+  
